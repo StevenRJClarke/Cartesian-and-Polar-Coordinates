@@ -1,0 +1,128 @@
+/*Layout*/
+.mobile-message {
+  display: none;
+}
+.widget-content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 50px;
+  width: 80%;
+}
+.widget-section {
+  border-bottom: 2px solid #f9f9f9;
+  margin: 0 2em 1em 2em;
+  padding-bottom: 1em;
+}
+.widget-section:last-of-type {
+  border-bottom: none;
+}
+.widget-canvas {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-column {
+  padding: 1em;
+}
+.right-column {
+  padding: 1em;
+  width: 50%;
+}
+
+/*Canvas*/
+#canvas {
+  background: #f9f9f9;
+}
+
+/*Output*/
+.cartesian, .polar {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cartesian-fields, .polar-fields {
+  width: 200px;
+}
+.cartesian-output, .polar-output {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+/*Toggle switch*/
+.toggle-button {
+  align-items: center;
+  display: flex;
+  padding-top: 1em;
+}
+.switch {
+  display: inline-block;
+  /*margin: 0.1em;*/
+}
+.switch input {
+  display: none;
+}
+.toggle {
+  background: #2193b0;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 24px;
+  position: relative;
+  width: 50px;
+}
+.toggle:before {
+  background: white;
+  border-radius: 10px;
+  content: "";
+  height: 20px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 20px;
+}
+input[type="checkbox"]:checked + .toggle:before {
+  left: 28px;
+}
+.toggle-label {
+  display: inline;
+}
+
+/*Plot buttons*/
+.cartesian-plot, .polar-plot {
+  align-self: flex-start;
+}
+
+.cartesian-plot, .polar-plot, .clear-button {
+  border: none;
+  border-radius: 1em;
+  box-shadow: 0.2em 0.2em 0.5em #ddd;
+  color: white;
+  font: bold 1.2em 'Lato', sans-serif;
+  margin: 1em;
+  padding: 0.8em;
+}
+
+/*Responsive*/
+@media screen and (max-width: 700px) {
+  /*Layout*/
+  .mobile-message {
+    display: block;
+    height: 800px;
+  }
+  .widget-content {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+  /*Layout*/
+  .mobile-message {
+    display: none;
+  }
+  .widget-content {
+    width: 100%;
+  }
+  .right-column {
+    width: 100%;
+  }
+}

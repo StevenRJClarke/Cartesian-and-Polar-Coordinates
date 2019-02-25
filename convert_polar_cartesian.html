@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Convert Between Polar and Cartesian Coordinates - free Mathematics lessons and tests</title>
+
+  <!-- Start of meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is an application that lets the user convert between polar and Cartesian coordinates.">
+  <meta name="keywords" content="Coordinates, polar, Cartesian, x-coordinate, y-coordinate, radial coordinate, angular coordinate "/>
+  <!-- End of meta -->
+
+  <!-- Start of links -->
+
+  <!--Start of Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!-- Start of CSS -->
+  <link rel="styleSheet" type="text/css" href="css/main.css">
+  <link rel="styleSheet" type="text/css" href="css/responsive.css">
+  <link rel="styleSheet" type="text/css" href="css/convert_polar_cartesian.css">
+  <!-- End of CSS -->
+  <!-- End of links -->
+
+  <!-- Start of scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/c3bcd475bc.js"></script>
+  <!-- End of scripts -->
+</head>
+
+<body>
+
+
+
+  <header class="gradient-background">
+
+  </header>
+
+    <!-- Start of container div -->
+  <div class="container" id="contain">
+
+    <!-- Start of Collapse Bar -->
+    <div class="collapse">
+    </div>
+    <!-- End of Collapse Bar -->
+
+    <p class="mobile-message">This widget will not display on mobile devices.</p>
+
+    <div class="main-container max-width">
+
+      <!-- Start of Widget Content -->
+
+      <div class="widget-content">
+        <h1 class="text-centred">Converting Between Polar and Cartesian Coordinates</h1>
+
+        <!-- Start of Widget Intro -->
+        <section class="widget-section">
+          <p>A point can be described using <a href="../lessons/cartesian_coordinates.html">Cartesian</a> or <a href="../lessons/polar_coordinates.html">polar</a> coordinates.</p>
+
+          <p>This widget allows you to see a convert between polar and Cartesian coordinates (and vice versa).</p>
+        </section>
+        <!-- End of Widget Intro -->
+
+        <section class="widget-section">
+          <h2>Learn About Polar and Cartesian Coordinates</h2>
+
+          <p>Polar and Cartesian coordinates are two different ways of describing the position of a point on a graph.</p>
+
+          <p>This widget allows you to click a point on a graph. It will then tell you the point's coordinates in both polar and Cartesian coordinates.</p>
+
+          <p>You can also enter the point's coordinates in either polar or Cartesian coordinates. It will then plot the point.</p>
+
+
+          <!-- Start of Widget Canvas -->
+          <div class="widget-canvas">
+            <div class="left-column">
+              <canvas id="canvas" height="500px" width="500px"></canvas>
+            </div>
+            <div class="right-column">
+              <h2>Cartesian Coordinates</h2>
+
+              <div class="cartesian">
+
+                <img src="images/cartesian_coordinates_mini.png" />
+
+                <div class="cartesian-fields">
+                  <p><strong>x-coordinate:</strong></p>
+
+                  <input type="text" name="xCoordinate">
+
+                  <p><strong>y-coordinate:</strong></p>
+
+                  <input type="text" name="yCoordinate">
+
+                  <p class="cartesian-output"></p>
+                </div>
+
+                <button class="cartesian-plot gradient-background">Plot</button>
+              </div>
+
+              <h2>Polar Coordinates</h2>
+
+              <div class="polar">
+
+                <img src="images/polar_coordinates_mini.png" />
+
+                <div class="polar-fields">
+                  <p><strong>radial coordinate:</strong></p>
+
+                  <input type="text" name="radialCoordinate">
+
+                  <p><strong>angular coordinate:</strong></p>
+
+                  <input type="text" name="angularCoordinate">
+
+                  <div class="toggle-button">
+
+                    <p class="toggle-label">Degrees</p>
+
+                    <label class="switch">
+                      <input type="checkbox" name="angle-switch">
+                      <div class="toggle"></div>
+                    </label>
+
+                    <p class="toggle-label">Radians</p>
+                  </div>
+
+                  <p class="polar-output"></p>
+                </div>
+
+                <button class="polar-plot gradient-background">Plot</button>
+              </div>
+
+              <button class="clear-button gradient-background">Clear</button>
+            </div>
+          </div>
+
+        </div>
+        <!--End of Widget Canvas-->
+      </section>
+    </div>
+    <!--End of Widget Content-->
+  </div>
+  <!-- End of Main Container -->
+
+</div>
+<!-- End of Container -->
+
+<script language="JavaScript" src="js/convert_polar_cartesian.js"></script>
+
+</body>
+
+</html>
